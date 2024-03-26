@@ -7,9 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="movie-base" />
         <module name="movie-app" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="movie-base" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
