@@ -1,0 +1,25 @@
+server:
+  port: 9000
+  error:
+    include-message: always
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/movie_xsis?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+logging:
+  level:
+    org.Xsis: DEBUG
+    org.hibernate: ERROR
+    org.springframework: INFO
